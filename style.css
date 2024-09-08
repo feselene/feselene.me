@@ -1,0 +1,186 @@
+/* Color Variables */
+:root {
+    --lt-blue: #D8E8EF;
+    --med-blue: #B0D1DF;
+    --full-blue: #388CB2;
+    --dark-blue-green: #005A6C;
+    --dark-blue: #0A376C;
+    --gray: #999;
+    --dkgray: #777;
+    --xdkgray: #555;
+    --orange: #bd4f17;
+}
+
+/* General Styles */
+body, h1, h2, p, a, li, div, span {
+    font-family: Arial, sans-serif;
+    color: #D8E8EF;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: white;
+}
+
+header, nav, footer {
+    width: 100%;
+    background-color: var(--full-blue);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--med-blue);
+}
+
+footer {
+    background-color: var(--dark-blue);
+    padding: 10px;
+    color: #ffffff;
+}
+
+/* Main Content Area */
+#content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#main {
+    flex: 3;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-image: url("http://eskipaper.com/images/star-wallpaper-5.jpg");
+    background-size: cover;
+    border: 1px solid #D3D3D3;
+}
+
+#sidebar {
+    flex: 1;
+    background-color: var(--lt-blue);
+    color: black;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #D3D3D3;
+}
+
+/* Navigation Box */
+#navigation_box {
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    box-shadow: 0 0 5px #39A2F3;
+    z-index: 1000;
+    transition: box-shadow 0.5s;
+}
+
+#navigation_box:hover {
+    box-shadow: 0 0 10px #39A2F3;
+}
+
+#navigation_box a {
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+#navigation_box a:hover {
+    background-color: #0071ca;
+    box-shadow: 0 0 20px #39A2F3;
+}
+
+/* Other Specific Classes */
+.entrywrap {
+    background-color: var(--lt-blue);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--lt-blue);
+}
+
+.bbcode_url {
+    color: #2188e9;
+    text-decoration-color: #ff6699;
+}
+
+strong {
+    color: white;
+}
+
+.comment {
+    background-color: #D8E8EF;
+    color: black;
+    font-size: 12pt;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+}
+
+.comment:hover {
+    background-color: #C8D8DF;
+}
+
+.widget {
+    background-color: #D8E8EF;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.widget-header {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+}
+
+.widget-content {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-radius: 5px;
+}
+
+/* Flexbox Layout Adjustments */
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column;
+    }
+    #sidebar {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
