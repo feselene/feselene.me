@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">  <!-- Link to CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Personal Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #356cb5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    #content {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    #main {
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #sidebar {
+      flex: 30%;
+      background-color: #e8e8e8;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
+
+<header>
+  <h1>Roy Wang's Personal Site</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="pages/about.html">About</a>
+  <a href="pages/contact.html">Contact</a>
+</nav>
+
+<div id="content">
+  <div id="main">
+    <h2>Projects</h2>
+    <p>AnyLove Dating App</p>
+    <p>Uber Clone</p>
+  </div>
+  
+  <div id="sidebar">
+    <h3>About Me</h3>
+    <p>Full Stack Developer. </p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Roy Wang</p>
+</footer>
+
 </body>
 </html>
