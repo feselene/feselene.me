@@ -33,20 +33,15 @@
     }
     #content {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       padding: 20px;
     }
-    #main {
-      flex: 70%;
+    .project-box {
+      flex: 45%;
       background-color: white;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    #sidebar {
-      flex: 30%;
-      background-color: #e8e8e8;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 10px;
     }
     footer {
       background-color: #222;
@@ -69,15 +64,14 @@
 </nav>
 
 <div id="content">
-  <div id="main">
-    <h2>Projects</h2>
-    <p>AnyLove Dating App</p>
-    <p>Uber Clone</p>
+  <div class="project-box">
+    <h2>AnyLove Dating App</h2>
+    <p>A Tinder-like dating app that allows users to swipe on video profiles.</p>
   </div>
   
-  <div id="sidebar">
-    <h3>About Me</h3>
-    <p>Full Stack Developer. </p>
+  <div class="project-box">
+    <h2>Uber Clone</h2>
+    <p>An Uber-like app where users can book rides and drivers can accept them in real-time.</p>
   </div>
 </div>
 
