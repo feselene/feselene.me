@@ -1,3 +1,3 @@
 # website
 Personal Website
-Run http-server to get local version of website
+Run 'http-server' to a local website version
