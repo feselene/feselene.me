@@ -1,4 +1,15 @@
 {
-    "q1": {"question": "What time is it?", "ans_index": 0, "ans_choices": [1, 2, "answer", 4]},
-    "q2": {"question": "What time is it?", "ans_index": 2, "ans_choices": [1, 2, 3, 4]}
-}
+    "quiz": [
+      {
+        "question": "What time is it?",
+        "ans_index": 0,
+        "ans_choices": ["1", "2", "answer", "4"]
+      },
+      {
+        "question": "What time is it?",
+        "ans_index": 2,
+        "ans_choices": ["1", "2", "3", "4"]
+      }
+    ]
+  }
+  
