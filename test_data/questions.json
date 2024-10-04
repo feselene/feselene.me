@@ -1,14 +1,104 @@
 {
     "quiz": [
       {
-        "question": "What time is it?",
-        "ans_index": 0,
-        "ans_choices": ["1", "2", "answer", "4"]
+        "question": "Which of the following is/are true regarding enzymes?\ni. Enzymes decrease the activation energy of reactions.\nii. Enzymes change the equilibrium constant of reactions.\niii. Enzymes are not consumed in the reactions they catalyze.",
+        "ans_index": 1,
+        "ans_choices": [
+          "i only",
+          "i and iii only",
+          "ii and iii only",
+          "i, ii, and iii"
+        ]
       },
       {
-        "question": "What time is it?",
+        "question": "Which of the following factors affect the rate of a chemical reaction?\ni. Temperature\nii. Concentration of reactants\niii. Presence of a catalyst",
+        "ans_index": 3,
+        "ans_choices": [
+          "i only",
+          "ii and iii only",
+          "i and iii only",
+          "i, ii, and iii"
+        ]
+      },
+      {
+        "question": "Which of the following statements about cellular respiration is correct?\ni. Glycolysis occurs in the mitochondria.\nii. The citric acid cycle produces NADH and FADH₂.\niii. Oxygen is the final electron acceptor in the electron transport chain.",
+        "ans_index": 1,
+        "ans_choices": [
+          "i only",
+          "ii and iii only",
+          "i and ii only",
+          "i, ii, and iii"
+        ]
+      },
+      {
+        "question": "Which of the following describes characteristics of DNA replication in eukaryotes?\ni. It is semiconservative.\nii. It occurs only during the G2 phase of the cell cycle.\niii. It requires RNA primers to initiate replication.",
+        "ans_index": 1,
+        "ans_choices": [
+          "i only",
+          "i and iii only",
+          "ii and iii only",
+          "i, ii, and iii"
+        ]
+      },
+      {
+        "question": "Which of the following statements about acid-base reactions is true?\ni. A strong acid has a high Ka value.\nii. A strong base completely dissociates in water.\niii. A buffer is most effective when its pH is close to its pKa.",
+        "ans_index": 3,
+        "ans_choices": [
+          "i and ii only",
+          "ii and iii only",
+          "i and iii only",
+          "i, ii, and iii"
+        ]
+      },
+      {
+        "question": "Which of the following statements are true about the Hardy-Weinberg principle?\ni. It assumes random mating in a population.\nii. It assumes no gene flow between populations.\niii. It applies to populations that are undergoing natural selection.",
+        "ans_index": 1,
+        "ans_choices": [
+          "i only",
+          "i and ii only",
+          "ii and iii only",
+          "i, ii, and iii"
+        ]
+      },
+      {
+        "question": "Which of the following processes occur during muscle contraction?\ni. ATP binds to the myosin head to allow it to detach from actin.\nii. The sarcomere lengthens as the muscle contracts.\niii. Calcium ions bind to troponin to initiate contraction.",
+        "ans_index": 1,
+        "ans_choices": [
+          "i only",
+          "i and iii only",
+          "ii and iii only",
+          "i, ii, and iii"
+        ]
+      },
+      {
+        "question": "Which of the following is true regarding the pH scale?\ni. A pH of 7 indicates a neutral solution.\nii. pH is inversely related to the concentration of hydrogen ions.\niii. A solution with a pH of 4 is 100 times more acidic than a solution with a pH of 6.",
+        "ans_index": 3,
+        "ans_choices": [
+          "i and ii only",
+          "ii and iii only",
+          "i and iii only",
+          "i, ii, and iii"
+        ]
+      },
+      {
+        "question": "Which of the following statements about the immune system is true?\ni. Helper T cells are involved in activating both B cells and cytotoxic T cells.\nii. Antibodies produced by plasma cells can neutralize pathogens.\niii. The innate immune system has memory of past infections.",
+        "ans_index": 0,
+        "ans_choices": [
+          "i and ii only",
+          "i and iii only",
+          "ii and iii only",
+          "i, ii, and iii"
+        ]
+      },
+      {
+        "question": "Which of the following factors can affect enzyme activity?\ni. pH\nii. Substrate concentration\niii. Temperature",
         "ans_index": 2,
-        "ans_choices": ["1", "2", "3", "4"]
+        "ans_choices": [
+          "i only",
+          "i and ii only",
+          "i, ii, and iii",
+          "ii and iii only"
+        ]
       }
     ]
   }
