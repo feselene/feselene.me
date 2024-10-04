@@ -15,8 +15,7 @@
 body, h1, h2, p, a, li, div, span {
     font-family: Arial, sans-serif;
     color: #D8E8EF;
-    margin: 0;
-    padding: 0;
+    display: flex;
 }
 
 a {
