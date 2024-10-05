@@ -141,7 +141,6 @@
     return array;
   }
 
-  // Function to display the current question and its answer choices
   function displayQuestion() {
     if (currentQuestionIndex >= shuffledQuestions.length) {
       document.getElementById('question-text').textContent = 'Quiz complete! Well done.';
@@ -150,7 +149,10 @@
     }
 
     const currentQuestion = shuffledQuestions[currentQuestionIndex];
-    document.getElementById('question-text').textContent = currentQuestion.question;
+    
+    // Replace \n with <br> to display new lines
+    const questionWithLineBreaks = currentQuestion.question.replace(/\n/g, '<br>');
+    document.getElementById('question-text').innerHTML = questionWithLineBreaks;
     
     const answersContainer = document.getElementById('answers-container');
     answersContainer.innerHTML = ''; // Clear previous answers
@@ -164,6 +166,7 @@
       answersContainer.appendChild(answerDiv);
     });
   }
+
 
   // Function to check if the selected answer is correct
   function checkAnswer(selectedIndex) {
