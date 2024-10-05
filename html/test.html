@@ -93,7 +93,7 @@
 <body>
 
 <header>
-  <h1>MCAT</h1>
+  <h1>MCAT Quiz</h1>
 </header>
 
 <nav>
@@ -104,14 +104,11 @@
 
 <div class="questioncontainer">
   <div class="question">
-    <p>Question 1: How many holes in a polo?</p>
+    <p id="question-text">Loading question...</p>
   </div>
 
-  <div class="answers">
-    <div class="answer" onclick="checkAnswer(1)">1</div>
-    <div class="answer" onclick="checkAnswer(2)">2</div>
-    <div class="answer" onclick="checkAnswer(3)">3</div>
-    <div class="answer" onclick="checkAnswer(4)">4</div>
+  <div class="answers" id="answers-container">
+    <!-- Answer buttons will be dynamically generated -->
   </div>
 </div>
 
@@ -120,13 +117,70 @@
 </footer>
 
 <script>
-  function checkAnswer(option) {
-    if (option === 4) {
+  let shuffledQuestions = [];
+  let currentQuestionIndex = 0;
+
+  // Function to load and shuffle questions from the JSON file
+  async function loadQuestions() {
+    try {
+      const response = await fetch('../test_data/questions.json'); // Adjust path as needed
+      const data = await response.json();
+      shuffledQuestions = shuffleArray(data.quiz); // Shuffle the questions array
+      displayQuestion(); // Display the first question
+    } catch (error) {
+      console.error('Error loading questions:', error);
+    }
+  }
+
+  // Fisher-Yates Shuffle Algorithm to shuffle the questions
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  // Function to display the current question and its answer choices
+  function displayQuestion() {
+    if (currentQuestionIndex >= shuffledQuestions.length) {
+      document.getElementById('question-text').textContent = 'Quiz complete! Well done.';
+      document.getElementById('answers-container').innerHTML = ''; // Clear answers
+      return;
+    }
+
+    const currentQuestion = shuffledQuestions[currentQuestionIndex];
+    document.getElementById('question-text').textContent = currentQuestion.question;
+    
+    const answersContainer = document.getElementById('answers-container');
+    answersContainer.innerHTML = ''; // Clear previous answers
+
+    // Dynamically create answer buttons
+    currentQuestion.ans_choices.forEach((choice, index) => {
+      const answerDiv = document.createElement('div');
+      answerDiv.classList.add('answer');
+      answerDiv.textContent = choice;
+      answerDiv.onclick = () => checkAnswer(index);
+      answersContainer.appendChild(answerDiv);
+    });
+  }
+
+  // Function to check if the selected answer is correct
+  function checkAnswer(selectedIndex) {
+    const currentQuestion = shuffledQuestions[currentQuestionIndex];
+
+    if (selectedIndex === currentQuestion.ans_index) {
       alert("Correct!");
+      currentQuestionIndex++; // Move to the next question
+      displayQuestion(); // Display the next question
     } else {
       alert("Wrong! Try again.");
     }
   }
+
+  // Load and display questions on page load
+  window.onload = loadQuestions;
+
 </script>
 
 </body>
