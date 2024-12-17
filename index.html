@@ -7,11 +7,12 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+
     gtag('config', 'G-BPCQYBK1F2');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roy Wang's Personal Site</title>
+  <title>About Me - feselene</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -39,18 +40,12 @@
     nav a:hover {
       background-color: #555;
     }
-    #content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
       padding: 20px;
-    }
-    .project-box, .responsibilities-box {
       background-color: white;
-      padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: 10px;
-      width: 80%;
     }
     footer {
       background-color: #222;
@@ -63,45 +58,46 @@
 <body>
 
 <header>
-  <h1>Roy Wang's Personal Site</h1>
+  <h1>About Me</h1>
 </header>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="html/blog.html">Blog</a>
-  <a href="html/about.html">About</a>
-  <a href="html/contact.html">Contact</a>
-  <a href="html/mcat.html">MCAT Practice Exam</a>
+  <a href="../index.html">Home</a>  <!-- Corrected path to index.html -->
+  <a href="contact.html">Contact</a>  <!-- Corrected path to contact.html -->
+  <a href="mcat.html">MCAT</a>
 </nav>
 
-<div id="content">
-  <!-- <div class="project-box">
-    <h2>Personal Site</h2>
-    <p>Welcome to my personal site!</p>
-  </div> -->
+<div class="content">
+  <h2>Who Am I?</h2>
+  <p>
+      I'm a full-stack developer who thrives on solving complex real-world business challenges 
+      with simple, efficient, and elegant solutions. 
+  </p>
+  <p>
+      Passionate about algorithms and performance, I’m driven to learn and apply new technologies, 
+      with a particular interest in model-driven development for low-code enterprise applications. 
+  </p>
+  <p>
+      I excel in agile, fast-paced environments where collaboration and teamwork are essential. 
+  </p>
+  <p>
+      With strong communication and interpersonal skills, I embrace new challenges with confidence 
+      and adaptability, consistently aiming to deliver impactful results.
+  </p>
   
-  <div class="responsibilities-box">    
-    <p>
-        I'm a Java developer who thrives on solving complex real-world business challenges 
-        with simple, efficient, and elegant solutions. 
-    </p>
-    <p>
-        Passionate about algorithms and performance, I’m driven to learn and apply new technologies, 
-        with a particular interest in model-driven development for low-code enterprise applications. 
-    </p>
-    <p>
-        I excel in agile, fast-paced environments where collaboration and teamwork are essential. 
-    </p>
-    <p>
-        With strong communication and interpersonal skills, I embrace new challenges with confidence 
-        and adaptability, consistently aiming to deliver impactful results.
-    </p>
-</div>
+  <h2>What I Do</h2>
+  <p>I rapidly master frameworks to build maintainable, scalable, and future-proof infrastructures.</p>
+
+  <h2>My Motivation</h2>
+  <p>I strive to master my craft and deliver top-quality products with maximum efficiency and minimal cost.</p>
+
+  <h2>Education & Achievements</h2>
+  <p>I hold a Bachelor's degree in Computer Engineering and Computer Science, earned in 2022. My credentials include certifications in Responsive Web Design and JavaScript Algorithms, as well as advanced coursework in Machine Learning from MITx and Stanford University.</p>
 
 </div>
 
 <footer>
-  <p>&copy; 2024 Roy Wang</p>
+  <p>&copy; 2024 feselene</p>
 </footer>
 
 </body>
